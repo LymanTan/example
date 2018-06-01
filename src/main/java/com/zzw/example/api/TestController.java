@@ -22,7 +22,7 @@ public class TestController {
 		} catch (UnknownHostException e) {
 			e.printStackTrace();
 			return new ResponseEntity<String>("获取服务器ip失败", HttpStatus.valueOf(200));
-		}
+		} 
 		hostAddress = address.getHostAddress();
 		return new ResponseEntity<String>("你的没过!\r\n准备二辩\r\n本服务器ip:" + hostAddress, HttpStatus.valueOf(200));
 	}
